@@ -37,7 +37,7 @@ import sklearn
 
 Did you install Python 2 or 3? Why? How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I already had Python 2 installed and am choosing to stick with it since that's the version the bootcamp is taught in. You can check your version of python by typing "python --version" into the terminal.
 
 ---
 
