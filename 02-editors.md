@@ -61,6 +61,6 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> I'm choosing to use sublime text because it seems relatively simple to use. At first glance, I like the automatic colors and indicators that come up as you type code (e.g. lines under parens, different colors for functions) -- very easy to see what's going on visually. I also like the window on the right that shows where you are in the code. Useful short cuts: shift + command + P for command palette, command + n for new tab, command + shift + [ or ] to cycle through tabs. To customize the editor, I installed package control and have been playing around with what useful packages I can install. 
+>> I'm choosing to use sublime text because it seems relatively simple to use. At first glance, I like the automatic colors and indicators that come up as you type code (e.g. lines under parens, different colors for functions) -- very easy to see what's going on visually. I also like the window on the right that shows where you are in the code. Useful short cuts: `shift + command + P` for command palette, `command + n` for new tab, `command + shift + [ or ]` to cycle through tabs. To customize the editor, I installed package control and have been playing around with what useful packages I can install. 
 
 ---
