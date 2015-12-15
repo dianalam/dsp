@@ -23,7 +23,7 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 9. `cat > FILENAME.txt` prompts you for text and then writes that text to a file
 10. `head` and `tail` used to view only the beginning or end of a file; use `head -n NUMBEROFLINES FILENAME.txt`
 
-Other useful commands:
+>> Other useful commands:
 * `ctrl + C` to exit out of a command
 * `,` to reference current directory
 * `~` to reference home directory
