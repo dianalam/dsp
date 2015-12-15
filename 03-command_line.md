@@ -25,7 +25,7 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 
 >> Other useful commands:
 * `ctrl + C` to exit out of a command
-* `,` to reference current directory
+* `.` to reference current directory
 * `~` to reference home directory
 * `tab` to autocomplete 
 * `up arrow` to repeat previous lines
