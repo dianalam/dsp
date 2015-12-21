@@ -6,21 +6,23 @@
 
 # The below skeleton is optional.  You can use it or you can write the script with an approach of your choice.
 
+# solution with pandas
 import pandas as pd
 fball = pd.read_csv('football.csv') 
 
 fball['GoalsDif'] = abs(fball['Goals'] - fball['Goals Allowed'])
-fball.sort_values(by='GoalsDif', axis=0, inplace=True)
+minteam = fball.loc[fball['GoalsDif'].idxmin()]
+print minteam.Team + ' had the smallest difference in for and against goals.'
 
-print fball.iloc[0].Team + ' had the smallest difference in for and against goals with %d goal.' % fball.iloc[0].GoalsDif
+# solution without pandas
+import csv
 
-"""import csv
+with open ('football.csv') as fball:
+    difdict = {}
+    datadict = csv.DictReader(fball)
+    for row in datadict:
+        difdict[row['Team']] = abs(int(row['Goals']) - int(row['Goals Allowed']))
 
-  def read_data(data):
-   # COMPLETE THIS FUNCTION
+minteam = min(difdict.items(), key=lambda x:x[1])
 
-  def get_min_score_difference(self, parsed_data):
-    # COMPLETE THIS FUNCTION
-
-  def get_team(self, index_value, parsed_data):
-    # COMPLETE THIS FUNCTION"""
+print minteam[0] + ' had the smallest difference in for and against goals.'
