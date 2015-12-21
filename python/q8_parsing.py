@@ -1,4 +1,4 @@
-#The football.csv file contains the results from the English Premier League. 
+# The football.csv file contains the results from the English Premier League. 
 # The columns labeled ‘Goals’ and ‘Goals Allowed’ contain the total number of 
 # goals scored for and against each team in that season (so Arsenal scored 79 goals 
 # against opponents, and had 36 goals scored against them). Write a program to read the file, 
@@ -6,8 +6,15 @@
 
 # The below skeleton is optional.  You can use it or you can write the script with an approach of your choice.
 
+import pandas as pd
+fball = pd.read_csv('football.csv') 
 
-import csv
+fball['GoalsDif'] = abs(fball['Goals'] - fball['Goals Allowed'])
+fball.sort_values(by='GoalsDif', axis=0, inplace=True)
+
+print fball.iloc[0].Team + ' had the smallest difference in for and against goals with %d goal.' % fball.iloc[0].GoalsDif
+
+"""import csv
 
   def read_data(data):
    # COMPLETE THIS FUNCTION
@@ -16,4 +23,4 @@ import csv
     # COMPLETE THIS FUNCTION
 
   def get_team(self, index_value, parsed_data):
-    # COMPLETE THIS FUNCTION
+    # COMPLETE THIS FUNCTION"""
