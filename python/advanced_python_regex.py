@@ -49,8 +49,16 @@ print 'Title frequencies:', tcounter
 
 ####Q3. Search for email addresses and put them in a list.  Print the list of email addresses.
 
->> REPLACE THIS WITH YOUR RESPONSE
+with open ('faculty.csv') as faculty:
+    emails = []
+    facDict = csv.DictReader(faculty)
+    for row in facDict:
+        emails.append(row[' email'])
+
+print emails
 
 
 ####Q4. Find how many different email domains there are (Ex:  mail.med.upenn.edu, upenn.edu, email.chop.edu, etc.).  Print the list of unique email domains.
-'''
+
+unique_emails = {e.split('@')[1] for e in emails}
+print unique_emails
