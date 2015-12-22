@@ -12,14 +12,14 @@ with open ('faculty.csv') as faculty:
         if surname in faculty_dict:
             faculty_dict[surname].append([row[' degree'], row[' title'], row[' email']])
         else:
-            faculty_dict[surname] = [[row[' degree'], row[' title'], row[' email']]]
-            
- 		# professor_dict work
+            faculty_dict[surname] = [row[' degree'], row[' title'], row[' email']]
+        
+        # professor_dict work
         firstname = row['name'].split()[0]
         if (firstname, surname) in professor_dict:
             professor_dict[(firstname, surname)].append([row[' degree'], row[' title'], row[' email']])
         else:
-            professor_dict[(firstname, surname)] = [[row[' degree'], row[' title'], row[' email']]]
+            professor_dict[(firstname, surname)] = [row[' degree'], row[' title'], row[' email']]
 
 # printing!
 print {name:faculty_dict[name] for name in faculty_dict.keys()[:3]}, '\n'# print faculty_dict
