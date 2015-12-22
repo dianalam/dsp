@@ -8,10 +8,8 @@ with open ('faculty.csv') as faculty:
         emails.append(row[' email'])
 
 # write emails to new csv 
-newcsv = open ('emails.csv', 'wb')
-mywriter = csv.writer(newcsv)
-
-for item in emails:
-	mywriter.writerow([item])
-
-newcsv.close()
+with open ('emails.csv', 'w') as newcsv:
+	mywriter = csv.writer(newcsv)
+	for item in emails:
+		mywriter.writerow([item])
+	newcsv.close()
