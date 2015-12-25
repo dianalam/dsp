@@ -5,15 +5,14 @@
 >> Compared to the difference in means of 0.029 standard deviations for difference in height between first/non-first babies, the difference for mean weights is larger, suggesting a more significant difference in weights between first and non-first babies compared to heights. A bit of internet research suggests that a Cohen's d of 0.2 is generally regarded as a small effect, 0.5 a moderate effect, and 0.8 a large effect, so a d of 0.089 is still relatively small. 
 
 >> Code: 
-```python
 
-# import needed modules
+```python
 import nsfg
 import math
 
-preg = nsfg.ReadFemPreg() # read df
+preg = nsfg.ReadFemPreg() 
 
-live = preg[preg.outcome == 1] # only choose successful pregnancies
+live = preg[preg.outcome == 1] 
 firsts = live[live.birthord == 1] 
 others = live[live.birthord > 1]
 firstswt = firsts.totalwgt_lb
@@ -28,7 +27,6 @@ def cohensd(group1, group2):
     d = diff / math.sqrt(pooled_var)
     return d
 
-# print findings
 print 'First babies mean weight (lbs):', firstswt.mean()
 print 'Other babies mean weight (lbs):', otherswt.mean()
 print 'Difference bw means:', cohensd(firstswt, otherswt), 'std deviations'
