@@ -14,22 +14,8 @@ import thinkplot
 import matplotlib.pyplot as plt 
 import chap01soln
 
-def BiasPmf(pmf, label=''): # from chap03ex.ipynb
-    """Returns the Pmf with oversampling proportional to value.
-
-    If pmf is the distribution of true values, the result is the
-    distribution that would be seen if values are oversampled in
-    proportion to their values; for example, if you ask students
-    how big their classes are, large classes are oversampled in
-    proportion to their size.
-
-    Args:
-      pmf: Pmf object.
-      label: string label for the new Pmf.
-
-     Returns:
-       Pmf object
-    """
+# from chap03ex.ipynb
+def BiasPmf(pmf, label=''): 
     new_pmf = pmf.Copy(label=label)
 
     for x, p in pmf.Items():
