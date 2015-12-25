@@ -2,9 +2,9 @@
 
 >> Actual mean of number of children in hh: 1.024
 
->> Observed mean of number of children in hh: 2.40
+>> Observed mean of number of children in hh: 2.404
 
-<img src="dsp/img/ch3ex.jpg"/>
+<img src="../img/ch3ex.jpg"/>
 [<img src="img/think_stats.jpg" title="Think Stats"/>](http://greenteapress.com/thinkstats2/)
 
 Code Using Thinkstats Modules: 
