@@ -3,7 +3,7 @@
 >> The actual mean of number of children per household is 1.024, compared to the biased/observed mean of 2.404 children per household. This discrepancy makes sense, since in households without any children, there are no children to collect observed data from, and therefore those households are not included in the observed data. 
 
 Graph comparing actual vs. biased/observed pmfs:
-<img src="../img/ch3ex.jpg"/>
+<img src="../img/ch3ex.png"/>
 
 Code Using Thinkstats Modules: 
 ```python
