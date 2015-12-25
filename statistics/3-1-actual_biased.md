@@ -3,7 +3,7 @@
 >> Actual mean of number of children in hh: 1.024
 >> Observed mean of number of children in hh: 2.40
 
-<img src="img/ch3ex.jpg">
+<img src="img/ch3ex.jpg"/>
 
 Code Using Thinkstats Modules: 
 ```python
@@ -24,12 +24,13 @@ def BiasPmf(pmf, label=''):
     new_pmf.Normalize()
     return new_pmf
 
+# load df and calculate actual and observed pmfs
 resp = chap01soln.ReadFemResp()
-
 actual_pmf = thinkstats2.Pmf(resp.numkdhh, label='actual')
 biased_pmf = BiasPmf(actual_pmf, label='observed')
 
-thinkplot.Pmfs([actual_pmf, biased_pmf]) # plotting
+# plotting
+thinkplot.Pmfs([actual_pmf, biased_pmf]) 
 plt.xlabel('Number of Children')
 plt.ylabel('PMF')
 plt.legend()
@@ -37,7 +38,8 @@ plt.title('Actual vs. Observed Number of Children in HH')
 plt.savefig('../../dsp/img/ch3ex.jpg')
 plt.show()
 
-actualMean = tsPmf.Mean() # calculate and print means
+# calculate and print means
+actualMean = tsPmf.Mean() 
 observedMean = biased_pmf.Mean()
 print 'Actual mean:', actualMean
 print 'Observed/biased mean:', observedMean
@@ -45,6 +47,7 @@ print 'Observed/biased mean:', observedMean
 
 Alternate Code without Thinkstats:
 ```python
+# create pmf plot
 plthist = plt.hist(resp.numkdhh, bins=np.arange(0,7,1), align='left', normed = True) # plot pmf using matplotlib
 plt.legend(('num children in hh',))
 plt.show()
