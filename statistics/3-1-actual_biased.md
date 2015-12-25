@@ -5,7 +5,6 @@
 >> Observed mean of number of children in hh: 2.404
 
 <img src="../img/ch3ex.jpg"/>
-[<img src="img/think_stats.jpg" title="Think Stats"/>](http://greenteapress.com/thinkstats2/)
 
 Code Using Thinkstats Modules: 
 ```python
@@ -49,6 +48,8 @@ print 'Observed/biased mean:', observedMean
 
 Alternate Code without Thinkstats:
 ```python
+# attempted to do some parts of this without thinkstats modules
+
 # plot pmf using matplotlib
 plthist = plt.hist(resp.numkdhh, bins=np.arange(0,7,1), align='left', normed = True) 
 plt.legend(('num children in hh',))
