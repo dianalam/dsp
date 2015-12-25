@@ -1,9 +1,8 @@
 [Think Stats Chapter 3 Exercise 1](http://greenteapress.com/thinkstats2/html/thinkstats2004.html#toc31) (actual vs. biased)
 
->> Actual mean of number of children in hh: 1.024
+>> The actual mean of number of children per household is 1.024, compared to the biased/observed mean of 2.404 children per household. This discrepancy makes sense, since in households without any children, there are no children to collect observed data from, and therefore those households are not included in the observed data. 
 
->> Observed mean of number of children in hh: 2.404
-
+Graph comparing actual vs. biased/observed pmfs:
 <img src="../img/ch3ex.jpg"/>
 
 Code Using Thinkstats Modules: 
@@ -40,7 +39,7 @@ plt.savefig('../../dsp/img/ch3ex.jpg')
 plt.show()
 
 # calculate and print means
-actualMean = tsPmf.Mean() 
+actualMean = actual_pmf.Mean() 
 observedMean = biased_pmf.Mean()
 print 'Actual mean:', actualMean
 print 'Observed/biased mean:', observedMean
