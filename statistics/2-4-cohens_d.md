@@ -1,10 +1,12 @@
 [Think Stats Chapter 2 Exercise 4](http://greenteapress.com/thinkstats2/html/thinkstats2003.html#toc24) (Cohen's d)
 
->> First babies have a mean weight of 7.20 lbs and non-first babies have a mean weight of 7.33 lbs, for a difference in means of 0.089 standard deviations. 
+>> <b>Prompt:</b> Using the variable `totalwgt_lb`, investigate whether first babies are lighter or heavier than others. Compute `Cohen’s d` to quantify the difference between the groups. How does it compare to the difference in pregnancy length?
 
->> Compared to the difference in means of 0.029 standard deviations for difference in height between first/non-first babies, the difference for mean weights is larger, suggesting a more significant difference in weights between first and non-first babies compared to heights. A bit of internet research suggests that a Cohen's d of 0.2 is generally regarded as a small effect, 0.5 a moderate effect, and 0.8 a large effect, so a d of 0.089 is still relatively small. 
+>> <b>Answer:</b> First babies have a mean weight of `7.20 lbs` and non-first babies have a mean weight of `7.33 lbs`, for a difference in means (Cohen's d) of `0.089 standard deviations`. 
 
->> Code: 
+>> Compared to the difference in means of 0.029 standard deviations for difference in height between first/non-first babies, the difference for mean weights is larger, suggesting a more significant difference in weights between first and non-first babies compared to heights. However, a bit of internet research suggests that a Cohen's d of 0.2 is generally regarded as a small effect, 0.5 a moderate effect, and 0.8 a large effect, so a d of 0.089 is still relatively small. 
+
+Code: 
 
 ```python
 import nsfg

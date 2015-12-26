@@ -1,11 +1,15 @@
 [Think Stats Chapter 3 Exercise 1](http://greenteapress.com/thinkstats2/html/thinkstats2004.html#toc31) (actual vs. biased)
 
->> The actual mean of number of children per household is 1.024, compared to the biased/observed mean of 2.404 children per household. This discrepancy makes sense, since in households without any children, there are no children to collect observed data from, and therefore those households are not included in the observed data. 
+>> <b>Prompt:</b> Something like the class size paradox appears if you survey children and ask how many children are in their family. Families with many children are more likely to appear in your sample, and families with no children have no chance to be in the sample.
+<br>Use the NSFG respondent variable `NUMKDHH` to construct the actual distribution for the number of children under 18 in the household. Now compute the biased distribution we would see if we surveyed the children and asked them how many children under 18 (including themselves) are in their household. Plot the actual and biased distributions, and compute their means. 
 
-Graph comparing actual vs. biased/observed pmfs:
+>> <b>Answer:</b> The actual mean of number of children per household is `1.024`, compared to the biased/observed mean of `2.404` children per household. This discrepancy makes sense, since in households without any children, there are no children to collect observed data from, and therefore those households are not included in the observed data. 
+
+Graph comparing actual vs. biased/observed PMFs:
+
 <img src="../img/ch3ex.png"/>
 
-Code Using Thinkstats Modules: 
+Code using thinkstats modules: 
 ```python
 import seaborn as sns
 import numpy as np
@@ -14,7 +18,7 @@ import thinkplot
 import matplotlib.pyplot as plt 
 import chap01soln
 
-# from chap03ex.ipynb
+# define function to calculate biased pmf from actual pmf; tatken from chap03ex.ipynb
 def BiasPmf(pmf, label=''): 
     new_pmf = pmf.Copy(label=label)
 
@@ -45,7 +49,7 @@ print 'Actual mean:', actualMean
 print 'Observed/biased mean:', observedMean
 ```
 
-Alternate Code without Thinkstats:
+Alternate code without thinkstats:
 ```python
 # attempted to do some parts of this without thinkstats modules
 
