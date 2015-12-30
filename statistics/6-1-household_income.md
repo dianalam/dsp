@@ -10,6 +10,7 @@ Mean | $74,279 | $124,267
 Median | $51,226 | $51,226
 Sample skewness | 4.95 | 11.60
 Pearson's skewness | 0.74 | 0.39
+Pct. of households under mean | 66.0% | 85.7%
 
 >>The higher the upper bound, the more positively or right skewed the distribution is. 
 
@@ -28,7 +29,7 @@ import scipy
 inc = hinc.ReadData() # use built in TS2 script to read csv
 ```
 
-Following the suggestion in TS2, I created a function that would generate a sample of incomes that mirrored characteristics of the dataset. Because the lower and upper bounds are not defined in the dataset, I set a low bound of $1,000 and a high bound of $1,000,000. 
+Following the suggestion in TS2, I created a function that would generate a sample of incomes (`samp`) that mirrored characteristics of the dataset. Because the lower and upper bounds are not defined in the dataset, I set a low bound of $1,000 and a high bound of $1,000,000. 
 
 ```python
 def interpolate(data, highestLog):
