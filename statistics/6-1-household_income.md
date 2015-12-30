@@ -90,15 +90,17 @@ To investigate the impacts of using a higher income bound, I reran the analysis 
 sampPdf = thinkstats2.EstimatedPdf(samp, label='Upper bound: $1M')
 thinkplot.Pdf(sampCdf)
 plt.title('Income vs. PDF - Upper Income Bound of $1M')
+plt.xlabel('Income')
+plt.ylabel('PDF')
 plt.savefig('../../dsp/img/ex6_pdf_1M.png')
-thinkplot.Show(xlabel='Income', ylabel='PDF')
 
 # plot PDF of upper bound = $10M
 sampHigherPdf = thinkstats2.EstimatedPdf(samp_higher, label = 'Upper bound: $10M')
 thinkplot.Pdf(sampHigherPdf)
 plt.title('Income vs. PDF - Upper Income Bound of $10M')
+plt.xlabel('Income')
+plt.ylabel('PDF')
 plt.savefig('../../dsp/img/ex6_pdf_10M.png')
-thinkplot.Show(xlabel='Income', ylabel='PDF')
 ```
 
 <img src="../img/ex6_pdf_1M.png">
