@@ -15,7 +15,7 @@ Pearson's skewness | 0.74 | 0.39
 
 To begin, I loaded the income dataset using the `ReadData()` function built into the `hinc` module of TS2. 
 
-``python
+```python
 import hinc
 import hinc2
 import pandas as pd
