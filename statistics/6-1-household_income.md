@@ -4,7 +4,7 @@
 
 >> <b>Answer:</b> Assuming an upper bound income of $1,000,000 and $10,000,000 for the two scenarios: 
 
->> Statstic | Upper bound = $1M | Upper bound: $10M
+>> Statstic | Upper bound = $1M | Upper bound = $10M
 ----- | ----- | -----
 Mean | $74,279 | $124,267
 Median | $51,226 | $51,226
@@ -28,14 +28,14 @@ import scipy
 inc = hinc.ReadData() # use built in TS2 script to read csv
 ```
 
-Following the suggestion in TS2, I created a function that would generate a sample of incomes that mirrored characteristics of the dataset. Because the lower and upper bounds are not defined in the dataset, I set a lower bound of $1,000 and a highest bound of $1,000,000. 
+Following the suggestion in TS2, I created a function that would generate a sample of incomes that mirrored characteristics of the dataset. Because the lower and upper bounds are not defined in the dataset, I set a low bound of $1,000 and a high bound of $1,000,000. 
 
 ```python
 def interpolate(data, highestLog):
     data['logupper'] = np.log10(data['income']) # set log10 income of higher bound
     data['loglower'] = data.logupper.shift(1) # set log10 income of lower bound
     data.loglower[0] = 3.0 # set lowest income bound to $1k
-    data.logupper[41] = highestLog # set highest income bound to $1m
+    data.logupper[41] = highestLog # set highest income bound to given log as defined in function call
 
     # generate array containing sample log values
     logArray = []
@@ -78,6 +78,7 @@ def summary(samp): # calculate summary stats
     
     pctUnderMean = Cdf.Prob(mean)
     print 'Percent hh with income under mean:', pctUnderMean * 100
+
 summary(samp)
 ```
 
@@ -99,5 +100,5 @@ plt.savefig('../../dsp/img/ex6_pdf_10M.png')
 thinkplot.Show(xlabel='Income', ylabel='PDF')
 ```
 
-<img src="../../img/ex6_pdf_1M.png">
-<img src="../../img/ex6_pdf_10M.png">
+<img src="../img/ex6_pdf_1M.png">
+<img src="../img/ex6_pdf_10M.png">
