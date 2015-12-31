@@ -42,7 +42,7 @@ plt.show()
 
 <img src="../img/ch7scatter.png">
 
-To plot mother's age vs. percentiles of birth weight, I binned mother's age in intervals of 2 years, indexed the ages to the bins, grouped the birth weight data by the age indicies, and calulateed the mean age and percentiles of weight for each index. Then I plotted the 25th, 50th, and 75th percentiles for birth weights against each age index. 
+To plot mother's age vs. percentiles of birth weight, I binned mother's age in intervals of 2 years, indexed the ages to the bins, grouped the birth weight data by the age indicies, and calulated the mean age and percentiles of weight for each index. Then I plotted the 25th, 50th, and 75th percentiles for birth weights against each age index. 
 
 ```python
 bins = np.arange(10, 50, 2) # bin age data between 10 yrs and 50 yrs, with interval of 2 yrs
