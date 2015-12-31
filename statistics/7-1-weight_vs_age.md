@@ -6,9 +6,7 @@
 
 >> The fact that Spearman's correlation is slightly higher indicates that the minimal correlation between weight and mother's age is not linear, or that there are outliers in the data. 
 
-<img src="../img/ch7scatter.png">
-
-<img src="../img/ch7scatter_pct.png">
+<img src="../img/ch7scatter.png">  <img src="../img/ch7scatter_pct.png">
 
 
 Process: 
