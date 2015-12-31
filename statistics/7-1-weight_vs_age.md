@@ -6,6 +6,11 @@
 
 >> The fact that Spearman's correlation is slightly higher indicates that the minimal correlation between weight and mother's age is not linear, or that there are outliers in the data. 
 
+<img src="../img/ch7scatter.png">
+
+<img src="../img/ch7scatter_pct.png">
+
+
 Process: 
 
 To start, I imported the necessary TS2 modules and parsed the data for weight and age, selecting only live births and dropping NA/NAN values. 
@@ -40,8 +45,6 @@ plt.savefig('../../dsp/img/ch7scatter.png')
 plt.show()
 ```
 
-<img src="../img/ch7scatter.png">
-
 To plot mother's age vs. percentiles of birth weight, I binned mother's age in intervals of 2 years, indexed the ages to the bins, grouped the birth weight data by the age indicies, and calulated the mean age and percentiles of weight for each index. Then I plotted the 25th, 50th, and 75th percentiles for birth weights against each age index. 
 
 ```python
@@ -63,8 +66,6 @@ for percent in [75, 50, 25]:
     plt.legend(loc=3)
     plt.savefig('../../dsp/img/ch7scatter_pct.png')
 ```
-
-<img src="../img/ch7scatter_pct.png">
 
 Then I computed Pearson's and Spearman's correlation. 
 
