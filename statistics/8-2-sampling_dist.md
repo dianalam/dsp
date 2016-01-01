@@ -3,7 +3,7 @@
 >> **Prompt:** Suppose you draw a sample with size `n = 10` from an exponential distribution with `λ = 2`. Simulate this experiment 1000 times and plot the sampling distribution of the estimate `L`. Compute the standard error of the estimate and the 90% confidence interval. Repeat the experiment with a few different values of n and make a plot of standard error versus `n`.
 
 >> **Answer:**  
-As `n` gets bigger, the standard error decreases and the CI becomes narrower. 
+As we can see in the outputs below, as `n` gets bigger, the standard error decreases and the CI becomes narrower. Based on the `n` vs. standard error chart, it appears that the critical `n` interval is somewhere between `n = 10` and `n = 100` -- the standard error decreases quite dramatically between those values; after `n = 100`, the magnitude of the slope begins to decrease. 
 
 >> Statistic | n = 10 | n = 100 | n = 500 | n = 1000
 ---- | ---- | ---- | ---- | ----
