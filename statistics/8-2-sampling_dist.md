@@ -64,7 +64,12 @@ def sampDist(lam, n, m, pr=True, pl=True):
 I ran the function a few times with different values of `n` --  10, 100, 500, 1,000 -- to observe differences in behavior. 
 
 ```python
-sampDist(2, 10, 1000, True, True)
+ns = [10, 100, 500, 1000] # set a few test values for `n`
+
+# loop through `n`s and create sampling dists
+for n in ns:
+    print 'n =', n, '\n'
+    sampDist(2, n, 1000, True, True)
 ```
 
 To create a more robust dataset of `n` vs. standard error, I created a longer list of 100 values of `n` between 10 and 1,000, iterated through the list and ran the `sampDist` function, and plotted the results. 
