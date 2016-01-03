@@ -14,11 +14,11 @@ If an estimator is unbiased, the mean error should approach zero as the number o
 
 <img src='../img/ch8ex3_meanerr.png'>
 
-To investigate what happens to sampling/standard error as the goal-scoring rate increases, I followed the same approach, calculating stadard error for a range of goal-scoring rates between 10 and 100. As the chart below shows, as the goal-scoring rate increases, the standard error increases. This makes sense--as the number of target goals grows, the greater the number of random `timeOfGoals` (or time between goals) gets taken, errors accumulate, and the greater the chances are of getting a `numGoals` (estimated total number of goals scored) that deviates from the actual rate. To reduce sampling error using this simulator, one should increase the number of games simulated as the goal rate increases. 
+To investigate what happens to sampling/standard error as the goal-scoring rate increases, I followed the same approach, calculating standard error for a range of goal-scoring rates between 10 and 100. As the chart below shows, as the goal-scoring rate increases, the standard error increases. This makes sense--as the number of target goals grows, the greater the number of random `timeOfGoals` (or time between goals) gets taken, errors accumulate, and the greater the chances are of getting a `numGoals` (estimated total number of goals scored) that deviates from the actual rate. To reduce sampling error using this simulator, one should increase the number of games simulated as the goal rate increases. 
 
 <img src='../img/ch8ex3_stderr.png'>
 
-Process: 
+**Process:**
 
 I wrote a function `game()` to simulate one instance of the game with a given `rate` (goal-scoring rate, or `lam`). Then I wrote a function `gamesSim()` to simulate multiple games (`numGames`) given a rate. `gamesStats` calculates the standard and mean error statistics (with the option to print), and `gamesPlot` plots the sampling distribution with the 90% CI. 
 
@@ -43,7 +43,7 @@ def gamesSim(numGames, rate):
     return goalEstimates
 
 def gamesStats(goalEstimates, rate, pr=True):
-    # calculates std err and mean error based on game simulation, returns std err
+    # calculates std err and mean error based on game simulation, returns std err and mean error as tuple
     rmse = estimation.RMSE(goalEstimates, rate)
     meanErr = estimation.MeanError(goalEstimates, rate)
     if pr:
