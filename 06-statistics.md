@@ -78,14 +78,10 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 
 >> Observed Data = Elvis' twin was male.
 
-Hypothesis | Prior | Likelihood | Prior * Likelihood | Normalizing constant | Posterior 
+Hypothesis | Prior `p(H)` | Likelihood | Prior * Likelihood | Normalizing constant | Posterior 
 ----- | ----- | ----- | ----- | ----- | -----
 Elvis' twin was fraternal. | 1/125 or 0.8% | 50% | 0.4% | 0.7% | 54.5%
 Elvis' twin was identical. | 1/300 or 0.3% | 100% | 0.3% | 0.7% | **45.5%**
-
-table | test
----- | ----
-test | test
 
 >> **Priors:** This information is provided to us based on observed data in the population for fraternal and identical twins. 
 
