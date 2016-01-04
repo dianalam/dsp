@@ -96,7 +96,7 @@ Elvis' twin was identical. | 1/300 or 0.3% | 100% | 0.3% | 0.7% | **45.5%**
 ###Q8. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> Bayesian statistics considers prior probability alongside observed data to model a process, whereas frequentist statistics does not consider prior probability at all; frequentists only consider the observed data within the context of the experiment. 
+>> Bayesian statistics considers prior probability alongside observed data to model a process, whereas frequentist statistics does not consider prior probability at all; frequentists only consider the observed data within the context of the experiment. In terms of reporting, Bayesian statistics presents the probability of a hypothesis given observed data, whereas frequentist statistics either accepts or rejects a hypothesis given a probability threshold (generally `p-value`) and observed data. Bayesian statistics allows the scientist to refine his or her probability hypothesis ("posterior") as new observed data is collected; frequentist statistics does not. 
 
 ---
 
