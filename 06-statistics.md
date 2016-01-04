@@ -83,6 +83,10 @@ Hypothesis | Prior `p(H)` | Likelihood `p(D|H)` | `p(H)p(D|H)` | Normalizing con
 Elvis' twin was fraternal. | 1/125 or 0.8% | 50% | 0.4% | 0.7% | 54.5%
 Elvis' twin was identical. | 1/300 or 0.3% | 100% | 0.3% | 0.7% | **45.5%**
 
+table | test
+---- | ----
+test | test
+
 >> **Priors:** This information is provided to us based on observed data in the population for fraternal and identical twins. 
 
 >> **Likelihoods**: The probability of Elvis' twin being male if the twin is fraternal is 1/2 or 50%, since fraternal twins can be either sex. The probability of Elvis' twin being male if the twin is identical is 100% since identical twins are the same sex. 
