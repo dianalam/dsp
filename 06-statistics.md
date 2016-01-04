@@ -74,14 +74,29 @@ Bayes' Theorem is an important tool in understanding what we really know, given 
 
 Elvis Presley had a twin brother who died at birth.  What is the probability that Elvis was an identical twin? Assume we observe the following probabilities in the population: fraternal twin is 1/125 and identical twin is 1/300.  
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> The probability that Elvis had an identical twin is approximately 45.5%. To solve this problem, we can use Bayes's Theorem with the following data points: 
+
+>> Observed Data = Elvis' twin was male.
+
+>> Hypothesis | Prior - `p(H)` | Likelihood `p(D|H)` | `p(H)p(D|H)` | Normalizing constant `p(D)` | Posterior `p(H|D)`
+---- | ---- | ---- | ---- | ---- | ----
+Elvis' twin was fraternal. | 1/125 or 0.8% | 50% | 0.4% | 0.7% | 54.5%
+Elvis' twin was identical. | 1/300 or 0.3% | 100% | 0.3% | 0.7% | **45.5%**
+
+>> **Priors:** This information is provided to us based on observed data in the population for fraternal and identical twins. 
+
+>> **Likelihoods**: The probability of Elvis' twin being male if the twin is fraternal is 1/2 or 50%, since fraternal twins can be either sex. The probability of Elvis' twin being male if the twin is identical is 100% since identical twins are the same sex. 
+
+>> **Normalizing constant:** This describes the probability of Elvis' twin being male under any hypothesis. Based on the law of total probability, we can sum the products of the prior and the likelihoods from each hypothesis to obtain this. 
+
+>> **Posterior:** Simply the product of the prior and likelihood divided by the normalizing constant. 
 
 ---
 
 ###Q8. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Bayesian statistics considers prior probability alongside observed data to model a process, whereas frequentist statistics does not consider prior probability at all; frequentists only consider the observed data within the context of the experiment. 
 
 ---
 
