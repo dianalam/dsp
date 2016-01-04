@@ -8,10 +8,6 @@
 
 >> <b>Answer:</b> Approximately 34.27% of of the male population is in the Blue Man Group range of 5'10" to 6'1". 
 
->> <b>Null hypothesis:</b> 
-<br><b>Alternative hypothesis:</b>
-<br><b>Critical value for testing:</b>
-<br><b>P-value:</b> 
 
 I used `scipy.stats.norm` to create a normal distribution using the given mean of 178 cm and standard deviation of 7.7. 
 
@@ -45,3 +41,6 @@ pctInRange = dist.cdf(high) - dist.cdf(low)
 print('Pct of male pop in BMG range:', pctInRange * 100)
 ```
 
+I didn't see a natural fit for hypothesis testing with the prompt in this exercise, so to answer the second part of the question, I came up with a hypothetical scenario that could be tested using the provided data in this example. Suppose that we wanted to test the assertion that less than 40% of the male population is eligible to join BMG. To test this assertion, we have a sample of the heights of 100 men that we randomly pull off the street, the mean height of the sample, and the standard deviation. 
+
+The **null hypothesis** would be the hypothesis that we are trying to *reject* to prove our assertion. In this case, it would be that over 40% of the male population is eligible to join BMG. The **alternative hypothesis** is the opposite of the null hypothesis, i.e. the assertion that we are testing. The **critical value** for testing represents the key statistic that will help us reach a conclusion on our assertion; in this case, it could be the absolute value of the difference from the eligible height range. The **p-value** represents the probability of finding a result that supports our assertion given that our assertion is false, i.e. the possibility of finding it by chance. In this case, we could compare the test statistic from our sample population to random samples in the distribution to determine this probability. 
