@@ -21,7 +21,7 @@ Max diff in lengths observed | 0.269 | 0.230
 
 Process: 
 
-I modified the `RunModel` method of the `DiffMeansPermute` class and used the provided iPython notebook to run the test stats. 
+I modified the `RunModel` method of the `DiffMeansPermute` class and used the provided iPython notebook to run the test stats. To be honest, I relied pretty heavily on TS2 documentation to complete this exercise (and luckily it wasn't too complex), so would love to undertake more practice and examples to solidify my understanding of hypothesis testing. 
 
 ```python
 # create new class and modify runmodel for resampling
