@@ -8,7 +8,7 @@ Use this model to test the differences in pregnancy length and birth weight. How
 >> **Answer:** 
 There is little difference in the permutation and the resampling model; both yield similar p-values and differences in the test statistic. 
 
-Statistic | Results with Permutation | Results with Resampling
+>> Statistic | Results with Permutation | Results with Resampling
 ---- | ---- | ----
 **Birth weight** | 
 P-value | 0.0001 | 0.0
