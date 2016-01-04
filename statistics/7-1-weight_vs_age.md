@@ -2,7 +2,7 @@
 
 >> <b>Prompt:</b> Using data from the NSFG, make a scatter plot of birth weight versus mother’s age. Plot percentiles of birth weight versus mother’s age. Compute Pearson’s and Spearman’s correlations. How would you characterize the relationship between these variables?
 
->> <b>Answer:</b> Pearson's correlation for birth weight vs. mother's age is 0.069 and Spearman's correlation is 0.095. These statistics indicate that there is a very slight positive correlation between the two variables (i.e. as mother's age is greater, birth weight is greater). The scatter plot affirms the magnitude of the correlation as minimal, as there is no distinct pattern in the chart. The plot of mother's age vs. percentiles shows the pattern of the positive correlation, with slightly higher birth weights as the mother's age increases.  
+>> <b>Answer:</b> Pearson's correlation for birth weight vs. mother's age is 0.069 and Spearman's correlation is 0.095. These statistics indicate that there is a very slight positive correlation between the two variables (i.e. as mother's age is greater, birth weight is greater). The scatter plot affirms the magnitude of the correlation as minimal, as there is no distinct pattern in the chart. The plot of mother's age vs. percentiles shows the pattern of the positive correlation, with slightly higher birth weights as the mother's age increases until a little over 35 years of age.  
 
 >> The fact that Spearman's correlation is slightly higher indicates that the minimal correlation between weight and mother's age is not linear, or that there are outliers in the data. 
 

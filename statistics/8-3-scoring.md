@@ -6,7 +6,7 @@
 Write another function that simulates many games, stores the estimates of `lam`, then computes their mean error and RMSE.  
 Is this way of making an estimate biased? Plot the sampling distribution of the estimates and the 90% confidence interval. What is the standard error? What happens to sampling error for increasing values of `lam`?
 
-**Answer**: For my sampling distribution with a goal-scoring rate of 10 (I used `rate` instead of `lam` and a simulated number of games of 10,000 (`numGames`), the RMSE/standard error was 3.19 and the mean error was 0.05. 
+>> **Answer**: For my sampling distribution with a goal-scoring rate of 10 (I used `rate` instead of `lam` and a simulated number of games of 10,000 (`numGames`)), the RMSE/standard error was 3.19 and the mean error was 0.05. 
 
 <img src='../img/ch8ex3.png'>
 

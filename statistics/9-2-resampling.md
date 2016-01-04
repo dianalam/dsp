@@ -5,7 +5,7 @@ An alternative is to use the sample to estimate the distribution for the populat
 Write a class named `DiffMeansResample` that inherits from `DiffMeansPermute` and overrides `RunModel` to implement resampling, rather than permutation.  
 Use this model to test the differences in pregnancy length and birth weight. How much does the model affect the results?
 
-**Answer:** 
+>> **Answer:** 
 There is little difference in the permutation and the resampling model; both yield similar p-values and differences in the test statistic. 
 
 Statistic | Results with Permutation | Results with Resampling
